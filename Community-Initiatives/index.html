@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Richards Okiemute | Community Leadership &amp; Impact Portfolio</title>
+<meta name="description" content="Grassroots communities and free resources that lower the barriers African youths face in reaching global scholarships, careers and research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12211a; --muted:#4d5f56; --paper:#f2f5f0; --surface:#fff;
+  --line:#d5ded7; --green:#0a6b42; --green-deep:#073d27; --tint:#e3efe7; --gold:#e0a21b;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Public Sans','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.65;font-size:1rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+
+/* Hero */
+.hero{background:var(--green-deep);color:#fff;padding:3.5rem 0 5rem;border-bottom:6px solid var(--gold)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(2.8rem,9vw,5rem);line-height:1;letter-spacing:-.03em}
+.hero .role{color:#b9d9c7;font-weight:500;margin-top:.9rem;font-size:1.05rem}
+.hero .claim{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3.5vw,1.8rem);line-height:1.25;color:var(--gold);max-width:22em;margin-top:2.2rem}
+.hero .lede{font-size:1.1rem;color:#dcece3;max-width:36em;margin-top:.9rem}
+
+/* Impact */
+.impact{display:grid;gap:.75rem;margin:-3rem 0 2.5rem;grid-template-columns:repeat(auto-fit,minmax(175px,1fr))}
+.impact div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem;box-shadow:0 12px 24px -16px rgba(7,61,39,.6)}
+.impact strong{display:block;font-family:var(--display);font-weight:800;font-size:2.1rem;line-height:1.05;color:var(--green)}
+.impact span{font-size:.9rem;color:var(--muted);display:block;margin-top:.3rem}
+
+/* Toolbar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.bar p{color:var(--muted);font-size:.95rem}
+.bar button{font:inherit;font-weight:600;font-size:.9rem;background:var(--surface);color:var(--green-deep);border:1.5px solid var(--green);border-radius:999px;padding:.45rem 1.1rem;cursor:pointer}
+.bar button:hover{background:var(--tint)}
+
+/* Accordions */
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:1rem}
+details[open]{border-color:var(--green)}
+summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:1rem;padding:1.15rem 1.35rem}
+summary::-webkit-details-marker{display:none}
+summary h2{font-family:var(--display);font-weight:700;font-size:1.3rem;line-height:1.2;flex:1}
+summary small{display:block;font-family:var(--body);font-weight:400;font-size:.9rem;color:var(--muted);margin-top:.15rem}
+summary::after{content:"";width:.6rem;height:.6rem;border-right:2.5px solid var(--green);border-bottom:2.5px solid var(--green);transform:rotate(45deg);transition:transform .2s;flex:none;margin-right:.3rem}
+details[open]>summary::after{transform:rotate(-135deg)}
+.panel{padding:0 1.35rem 1.4rem}
+.panel>p{color:var(--muted);max-width:40em}
+.panel>p+p{margin-top:.9rem}
+
+/* Initiatives */
+.init{display:grid;gap:1.1rem;margin-top:.25rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.item{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:14px;padding:1.4rem 1.4rem 1.3rem;box-shadow:0 10px 24px -18px rgba(7,61,39,.55);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.item:hover,.item:focus-within{transform:translateY(-6px);box-shadow:0 22px 36px -18px rgba(7,61,39,.55);border-color:var(--green);border-top-color:var(--green)}
+.item .role-tag{align-self:flex-start}
+.item .go{margin-top:auto;padding-top:.9rem}
+.item .barrier{padding-bottom:.2rem}
+.golinks{margin-top:auto;padding-top:.9rem;display:flex;flex-wrap:wrap;gap:.4rem 1.3rem}
+.item .golinks .go{margin:0;padding:0}
+.item h3{font-family:var(--display);font-size:1.15rem;line-height:1.3}
+.item .role-tag{display:inline-block;font-size:.82rem;font-weight:600;color:var(--green-deep);background:var(--tint);border-radius:999px;padding:.1rem .7rem;margin:.35rem 0 .5rem}
+.item p{color:var(--muted);font-size:.97rem}
+.item .barrier{color:var(--ink);margin-top:.5rem}
+.item .barrier b{color:var(--green)}
+.go{display:inline-block;margin-top:.7rem;font-weight:600;color:var(--green);text-underline-offset:3px}
+.go:hover{color:var(--green-deep)}
+
+/* Nested resource groups */
+.sechead{margin:2.2rem 0 1rem}
+.sechead h2{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4vw,1.9rem);line-height:1.2;letter-spacing:-.01em}
+.sechead p{color:var(--muted);margin-top:.2rem}
+summary h3{font-family:var(--display);font-weight:700;font-size:1.2rem;line-height:1.25;flex:1}
+summary em{font-style:normal;font-size:.85rem;color:var(--muted);white-space:nowrap}
+.links{list-style:none;padding:0 1.35rem 1.4rem;display:grid;gap:.5rem}
+.links a{display:block;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.7rem 1rem;text-decoration:none;font-weight:500;font-size:.95rem}
+.links a:hover{border-color:var(--green);background:var(--tint);color:var(--green-deep)}
+
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:2rem 1rem 3rem}
+@media(max-width:560px){summary em{display:none}}
+@media(prefers-reduced-motion:reduce){.item:hover,.item:focus-within{transform:none}*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Richards Okiemute</h1>
+    <p class="role">Youth ecosystem builder · Grassroots community leader · Lagos, Nigeria</p>
+    <p class="claim">Opportunity should not depend on who you already know.</p>
+    <p class="lede">Since 2019, I have built free communities and open guides that help African youths move from grassroots vulnerability to economic agency, technical mastery and leadership.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="impact" aria-label="Impact at a glance">
+    <div><strong>7,500+</strong><span>People reached across free communities</span></div>
+    <div><strong>6+ years</strong><span>Of consistent leadership since 2019</span></div>
+    <div><strong>4</strong><span>Communities built or co-run</span></div>
+    <div><strong>40+</strong><span>Free guides, tutorials and videos</span></div>
+  </section>
+
+  <div class="bar">
+    <p>Open any section to explore.</p>
+    <button type="button" id="toggle" aria-pressed="false">Expand all</button>
+  </div>
+
+  <details open>
+    <summary><h2>Overview<small>Why this work exists</small></h2></summary>
+    <div class="panel">
+      <p>I have committed myself to addressing systemic barriers in education and technological access. Through structured communities, open-access guides and shared technical resources, my mission is to help the next generation grow from grassroots limitations into competent leaders and digital professionals.</p>
+      <p>Everything here is free of charge. The aim is simple: when a student in Lagos or Lusaka needs a scholarship deadline, a fee waiver, or a clear path into tech, the information and a community to act on it are already there.</p>
+    </div>
+  </details>
+
+  <details open>
+    <summary><h2>Community initiatives<small>Four systems, each removing a specific barrier</small></h2></summary>
+    <div class="panel">
+      <div class="init">
+        <article class="item">
+          <h3>Scholarship &amp; Tech Center</h3>
+          <span class="role-tag">Founder · 5,700+ followers</span>
+          <p>Live updates on global scholarships, fellowships, tech courses and SOP writing resources, delivered free to thousands of students.</p>
+          <p class="barrier"><b>Barrier removed:</b> missing opportunities because nobody told you in time.</p>
+          <a class="go" href="https://whatsapp.com/channel/0029Vb32yR32UPBIbILGsG0u" target="_blank" rel="noopener noreferrer">Follow the channel</a>
+        </article>
+        <article class="item">
+          <h3>App Fee Waiver Community</h3>
+          <span class="role-tag">Co-administrator · 1,490+ members</span>
+          <p>A global community across two groups helping students secure university admissions, application fee waivers and fully funded scholarships, with free templates and scholarship guides on its website.</p>
+          <p class="barrier"><b>Barrier removed:</b> application fees that stop strong candidates before they start.</p>
+          <div class="golinks"><a class="go" href="https://www.appfeewaiver.com" target="_blank" rel="noopener noreferrer">Visit the website</a><a class="go" href="https://chat.whatsapp.com/HcH3Ckgwa2SINLKYuuUMhF" target="_blank" rel="noopener noreferrer">Join the community</a></div>
+        </article>
+        <article class="item">
+          <h3>Future Forge [F²]</h3>
+          <span class="role-tag">Movement · 181 members</span>
+          <p>Exposes African youths to self-discovery, creative potential, and networking with visionary technocrats.</p>
+          <p class="barrier"><b>Barrier removed:</b> having no mentors or networks in rooms where decisions are made.</p>
+          <a class="go" href="https://chat.whatsapp.com/L0qB93kHLI4Dy4vkUxBiWS" target="_blank" rel="noopener noreferrer">Join the movement</a>
+        </article>
+        <article class="item">
+          <h3>True Scholars Research Circle</h3>
+          <span class="role-tag">Academic hub · 225 members</span>
+          <p>A collaborative group where we guide and help youths develop research capabilities and skills, building research culture and academic rigor with structured guidance on tools like Elsevier and Purdue OWL.</p>
+          <p class="barrier"><b>Barrier removed:</b> limited access to structured training for building research skills.</p>
+          <a class="go" href="https://chat.whatsapp.com/Gy7VP3W1J3qAqQYa38xGN7" target="_blank" rel="noopener noreferrer">Join the circle</a>
+        </article>
+      </div>
+    </div>
+  </details>
+
+  <div class="sechead">
+    <h2>Thought leadership &amp; community education</h2>
+    <p>Articles, guides and tutorials written to open doors for others.</p>
+  </div>
+
+  <details>
+        <summary><h3>Youth development and career thought leadership</h3><em>7 articles</em></summary>
+        <ul class="links">
+          <li><a href="https://bit.ly/3TUxIr5" target="_blank" rel="noopener noreferrer">How to Kickstart Your Tech Journey</a></li>
+          <li><a href="https://bit.ly/3bKkkEa" target="_blank" rel="noopener noreferrer">Important Skills You Must Develop to Keep Moving Ahead</a></li>
+          <li><a href="https://bit.ly/3xw2OdB" target="_blank" rel="noopener noreferrer">The Art of Writing Powerful and Persuasive Financial Aids for Tech Courses</a></li>
+          <li><a href="https://bit.ly/3zyDrLg" target="_blank" rel="noopener noreferrer">How to Choose the Right Online Tech Courses for Your Self Development</a></li>
+          <li><a href="https://bit.ly/3Qejcse" target="_blank" rel="noopener noreferrer">Tech Fields With Little or No Codes</a></li>
+          <li><a href="https://bit.ly/3Obp6Iy" target="_blank" rel="noopener noreferrer">Break Your Excuses For Not Developing Yourself Consistently</a></li>
+          <li><a href="https://bit.ly/3O84otb" target="_blank" rel="noopener noreferrer">Why You Should Get into Information Technology (Tech) Now</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><h3>Certification pathways and free learning</h3><em>8 articles</em></summary>
+        <ul class="links">
+          <li><a href="https://bit.ly/3AfGbxE" target="_blank" rel="noopener noreferrer">How I Passed 3 Microsoft Azure Exams in 1 Day (and 4 Exams in 4 Days)</a></li>
+          <li><a href="https://bit.ly/3D23jgt" target="_blank" rel="noopener noreferrer">How I Passed My AWS Cloud Practitioner Exam on My First Trial</a></li>
+          <li><a href="https://bit.ly/3MJvxBN" target="_blank" rel="noopener noreferrer">Learn, Develop, and Evolve with Microsoft Learn</a></li>
+          <li><a href="https://bit.ly/3Qkp2IK" target="_blank" rel="noopener noreferrer">Get Certified By Microsoft For Free</a></li>
+          <li><a href="https://bit.ly/3H2Caft" target="_blank" rel="noopener noreferrer">Boost Your Confidence and Tech Skills With Guided Projects</a></li>
+          <li><a href="https://bit.ly/32EaAae" target="_blank" rel="noopener noreferrer">Learn to Code for Free With FreeCodeCamp</a></li>
+          <li><a href="https://bit.ly/3fnDChn" target="_blank" rel="noopener noreferrer">Start 2022 with Free Courses from Google (Over 150 Free Courses)</a></li>
+          <li><a href="https://bit.ly/3yBMSqX" target="_blank" rel="noopener noreferrer">Kickstarting and Advancing Your Tech Career with Google Certificate Programs</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><h3>Cloud, DevOps and AI knowledge sharing</h3><em>13 tutorials</em></summary>
+        <ul class="links">
+          <li><a href="https://richards-okiemute.medium.com/building-a-serverless-genai-assistant-with-aws-bedrock-lambda-ses-and-eventbridge-89a7d887996f" target="_blank" rel="noopener noreferrer">Building a Serverless GenAI Assistant with AWS Bedrock, Lambda, SES, and EventBridge</a></li>
+          <li><a href="https://richards-okiemute.medium.com/become-the-next-aws-generative-ai-professional-developer-2793639c4f20" target="_blank" rel="noopener noreferrer">Become the Next AWS Generative AI Professional Developer</a></li>
+          <li><a href="https://richards-okiemute.medium.com/deploying-aws-lambda-function-using-terraform-and-python-8ea9bf667bf3" target="_blank" rel="noopener noreferrer">Deploying AWS Lambda Function Using Terraform and Python</a></li>
+          <li><a href="https://richards-okiemute.medium.com/deploy-and-manage-aws-lambda-and-step-function-using-aws-cdk-361114b1f263" target="_blank" rel="noopener noreferrer">Deploy and Manage AWS Lambda and Step Function Using AWS CDK</a></li>
+          <li><a href="https://richards-okiemute.medium.com/implementing-continuous-delivery-pipeline-with-aws-codepipeline-aws-codebuild-and-elastic-3142df84b2eb" target="_blank" rel="noopener noreferrer">Implementing a Continuous Delivery Pipeline with AWS CodePipeline, CodeBuild, and Elastic Beanstalk</a></li>
+          <li><a href="https://richards-okiemute.medium.com/developing-a-serverless-file-encryption-app-using-aws-lambda-s3-and-aws-cli-0e85c7aa9dfd" target="_blank" rel="noopener noreferrer">Developing a Serverless File-Encryption App Using AWS Lambda, S3, and AWS CLI</a></li>
+          <li><a href="https://richards-okiemute.medium.com/configure-and-connect-to-a-serverless-postgresql-database-with-amazon-aurora-serverless-v2-dd6d365fc540" target="_blank" rel="noopener noreferrer">Configure and Connect to a Serverless PostgreSQL Database with Amazon Aurora Serverless v2</a></li>
+          <li><a href="https://richards-okiemute.medium.com/deploying-a-virtual-private-cloud-vpc-for-richardscorp-using-aws-cloudformation-bb8ccae671ca" target="_blank" rel="noopener noreferrer">Deploying a Virtual Private Cloud (VPC) for RichardsCorp Using AWS CloudFormation</a></li>
+          <li><a href="https://richards-okiemute.medium.com/aws-microcredentials-are-now-free-bdf2e956f78c" target="_blank" rel="noopener noreferrer">AWS Microcredentials Are Now Free</a></li>
+          <li><a href="https://bit.ly/3xG1KW8" target="_blank" rel="noopener noreferrer">The Beautiful Intersections Between Engineering and Data Analytics</a></li>
+                  <li><a href="https://www.linkedin.com/pulse/deploying-nginx-web-server-azure-kubernetes-services-aks-okiemute/" target="_blank" rel="noopener noreferrer">Deploying Nginx Web Server to Azure Kubernetes Services (AKS)</a></li>
+          <li><a href="https://www.linkedin.com/pulse/technical-walkthrough-importing-d365-fo-uat-database-cloud-okiemute/" target="_blank" rel="noopener noreferrer">A Technical Walkthrough: Importing D365 F&amp;O UAT Database to Cloud</a></li>
+          <li><a href="https://www.linkedin.com/pulse/introduction-d365-environment-monitoring-performance-using-okiemute/" target="_blank" rel="noopener noreferrer">Introduction to D365 Environment Monitoring &amp; Performance</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><h3>Applied data and machine learning projects</h3><em>5 projects</em></summary>
+        <ul class="links">
+          <li><a href="https://github.com/richards-okiemute/Bellabeat-Data-Analysis-with-Python" target="_blank" rel="noopener noreferrer">Bellabeat Wellness Data Analysis with Python</a></li>
+          <li><a href="https://github.com/richards-okiemute/911-Calls-Data-Analysis-Project-using-Python" target="_blank" rel="noopener noreferrer">Emergency 911 Calls Data Analysis and Visualization</a></li>
+          <li><a href="https://github.com/richards-okiemute/Cyclistic-Bike-Share-Python-Data-Analytics-Project" target="_blank" rel="noopener noreferrer">Cyclistic Bike-Share User Behavior Analytics</a></li>
+          <li><a href="https://github.com/richards-okiemute/Cars-Miles-Per-Gallon-Prediction-Using-SparkML" target="_blank" rel="noopener noreferrer">Cars Miles Per Gallon Prediction Using Apache Spark ML</a></li>
+                  <li><a href="https://www.linkedin.com/pulse/my-linkedin-profile-analysis-richards-okiemute/" target="_blank" rel="noopener noreferrer">My LinkedIn Profile Analysis</a></li>
+        </ul>
+      </details>
+
+  <details>
+        <summary><h3>Video guides: scholarships and credentials</h3><em>2 videos</em></summary>
+        <ul class="links">
+          <li><a href="https://youtu.be/Nyk844_1IzI" target="_blank" rel="noopener noreferrer">How To Win the Linux Foundation (LiFT) Scholarship</a></li>
+          <li><a href="https://www.youtube.com/watch?v=AK47QR6xuyo" target="_blank" rel="noopener noreferrer">How To Merge Your Credly Accounts</a></li>
+        </ul>
+      </details>
+
+  <details>
+        <summary><h3>Video training: cloud and enterprise skills</h3><em>12 videos</em></summary>
+        <ul class="links">
+          <li><a href="https://www.youtube.com/watch?v=Cq_2g7V5pOc" target="_blank" rel="noopener noreferrer">Sentiment Analysis with Azure AI Language Services</a></li>
+          <li><a href="https://www.youtube.com/watch?v=qail9o0DAyY" target="_blank" rel="noopener noreferrer">Deploy Azure Kubernetes Service (AKS) with REST API Using Postman</a></li>
+          <li><a href="https://www.youtube.com/watch?v=1SruvEwS_l0" target="_blank" rel="noopener noreferrer">Deploy Azure Virtual Machine Using Postman REST API</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Q1j5ri_y1xM" target="_blank" rel="noopener noreferrer">Deploy AWS Elastic Kubernetes Service (EKS) Using Terraform Modules</a></li>
+          <li><a href="https://www.youtube.com/watch?v=1-BSF3pcjZA" target="_blank" rel="noopener noreferrer">Infrastructure as Code (IaC) Testing Using Terraform Test for EKS Deployment Validation</a></li>
+          <li><a href="https://www.youtube.com/watch?v=fFognFac1hA" target="_blank" rel="noopener noreferrer">Deploy AWS ALB Controller and Set Up OIDC Provider and IRSA</a></li>
+          <li><a href="https://www.youtube.com/watch?v=SDEHe3O3C_M" target="_blank" rel="noopener noreferrer">Introduction to D365 Finance &amp; Operations Environment and Performance Monitoring Tools in LCS</a></li>
+          <li><a href="https://www.youtube.com/watch?v=79T54R_69rg" target="_blank" rel="noopener noreferrer">Dynamics 365 Finance and Operations: ERP Training, Part 1</a></li>
+          <li><a href="https://www.youtube.com/watch?v=K7EKRHw-vdU" target="_blank" rel="noopener noreferrer">Dynamics 365 Finance and Operations: ERP Training, Part 2</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Csj9FkpyKfE" target="_blank" rel="noopener noreferrer">Dynamics 365 Finance and Operations: ERP Training, Part 3</a></li>
+          <li><a href="https://www.youtube.com/watch?v=-ZzHuSxgQHs" target="_blank" rel="noopener noreferrer">Dynamics 365 Finance and Operations: ERP Training, Part 4</a></li>
+          <li><a href="https://www.youtube.com/watch?v=xe4dtnvNKAA" target="_blank" rel="noopener noreferrer">Dynamics 365 Finance and Operations: ERP Training, Part 5</a></li>
+        </ul>
+      </details>
+
+</main>
+
+<footer>&copy; 2026 Richards Okiemute. Built for community leadership and impact.</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('toggle');
+  btn.addEventListener('click',function(){
+    var open=btn.getAttribute('aria-pressed')!=='true';
+    document.querySelectorAll('main details').forEach(function(d){d.open=open});
+    btn.setAttribute('aria-pressed',open);
+    btn.textContent=open?'Collapse all':'Expand all';
+  });
+})();
+</script>
+</body>
+</html>
