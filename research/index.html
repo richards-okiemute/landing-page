@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications & Experience · Richards O. Okiemute</title>
+<meta name="description" content="Explore peer-reviewed publications and research experience by Richards O. Okiemute on Geo-energy (H2 and CCUS) research, sustainable energy systems, and AI applications in energy systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6FA; --sheet:#FFFFFF; --ink:#131D30; --muted:#555F78;
+  --rule:#D7DEE9; --accent:#2B5490; --accent-ink:#FFFFFF; --wash:#E9EDF5;
+  --feat-bg:#0E1A30; --feat-ink:#F3F5FA; --feat-muted:#AEBEDC; --numeral:#C6CEE1;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;
+  background-color: var(--paper);
+  background-image: 
+    radial-gradient(circle at 12% 15%, rgba(43, 84, 144, 0.05) 0%, transparent 45%),
+    linear-gradient(rgba(19, 29, 48, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(19, 29, 48, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:2px}
+
+.layout{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:300px minmax(0,1fr);gap:56px;padding:72px 32px 96px}
+
+/* Sidebar: the scholar's title page */
+aside{position:sticky;top:72px;align-self:start;font-family:var(--sans);font-size:16px}
+.masthead-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:0 0 10px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+aside h1{font-family:var(--serif);font-size:28px;line-height:1.15;margin:0 0 12px;font-weight:700;letter-spacing:-.005em;white-space:nowrap;color:var(--ink)}
+.role{color:var(--muted);margin:0 0 20px}
+aside h2{font-size:15px;font-weight:600;margin:24px 0 8px;color:var(--ink)}
+aside ul{list-style:none;margin:0;padding:0}
+aside li{padding:3px 0;color:var(--muted)}
+ul.interests li{display:flex;align-items:flex-start;gap:9px;padding:6px 0}
+ul.interests svg{flex-shrink:0;width:16px;height:16px;margin-top:2px;color:var(--accent)}
+aside .profile-links{margin-bottom:20px;display:flex;flex-direction:column;gap:6px;font-size:14.5px}
+
+.count{border-top:3px double var(--rule);margin-top:32px;padding-top:14px;display:flex;gap:28px}
+.count b{display:block;font-family:var(--serif);font-size:30px;line-height:1.1;color:var(--ink)}
+.count span{color:var(--muted);font-size:14px}
+
+/* Navigation Jumps right under the counts */
+.nav-jumps{margin-top:16px;padding-top:14px;border-top:1px solid var(--rule);display:flex;flex-direction:column;gap:6px;font-size:14px;}
+.nav-jumps span{font-weight:600;color:var(--ink);font-size:13px;letter-spacing:0.05em;text-transform:uppercase;}
+.nav-jumps a{color:var(--muted);text-decoration:none;font-weight:600;transition:color 0.2s;}
+.nav-jumps a:hover{color:var(--accent);text-decoration:underline;}
+
+/* Main column */
+.intro{margin:0 0 48px;max-width:62ch}
+.intro p{margin:0;color:var(--muted)}
+section+section{margin-top:56px}
+main h2.year{display:flex;align-items:baseline;gap:14px;font-family:var(--serif);font-size:52px;line-height:1;font-weight:700;letter-spacing:-.02em;color:var(--numeral);margin:0 0 22px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+main h2.year small{font-family:var(--mono);font-size:14px;font-weight:600;letter-spacing:0;color:var(--muted);text-transform:uppercase}
+
+article{position:relative;background:var(--sheet);border:1px solid var(--rule);border-left:4px solid var(--accent);padding:22px 26px;margin:0 0 20px;border-radius:4px;box-shadow: 0 1px 3px rgba(0,0,0,0.04);overflow:hidden}
+article::after{content:"";position:absolute;top:9px;right:9px;width:11px;height:11px;border-top:1.5px solid var(--rule);border-right:1.5px solid var(--rule);pointer-events:none}
+article.current::after{border-color:rgba(255,255,255,.3)}
+.current-watermark{position:absolute;right:-18px;bottom:-14px;width:190px;height:190px;opacity:.1;pointer-events:none}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);border:1px solid var(--rule);background:var(--wash);padding:3px 8px;border-radius:3px;line-height:1.4}
+article.alt .tag{background:var(--sheet)}
+article.current .tag{color:var(--feat-ink);border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1)}
+article h3{font-size:21px;line-height:1.3;margin:0 0 8px;font-weight:600;color:var(--ink)}
+.authors{margin:0;font-size:16.5px;color:var(--muted)}
+.authors strong{font-weight:700;color:var(--ink)}
+.venue{margin:4px 0 0;color:var(--muted);font-size:16.5px}
+.venue em{color:var(--ink)}
+.summary{margin:12px 0 0;font-size:16.5px;max-width:64ch;color:var(--muted)}
+.abstract{margin-top:12px;background:var(--wash);border:1px solid var(--rule);border-radius:4px;padding:14px 16px;font-size:16px;max-width:66ch;color:var(--ink)}
+article.alt .abstract{background:var(--sheet)}
+article.current .abstract{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);color:var(--feat-ink)}
+
+/* Experience block styling */
+.experience-item {margin-bottom: 24px;}
+.experience-item:last-child {margin-bottom: 0;}
+.experience-item h4 {font-size: 18px; margin: 0 0 4px; font-weight: 600; font-family: var(--sans); color: var(--ink);}
+.experience-meta {font-family: var(--mono); font-size: 13.5px; color: var(--accent); margin-bottom: 8px; font-weight: 600; letter-spacing: -.01em;}
+.experience-details {font-family: var(--sans); font-size: 15px; margin: 0; padding-left: 20px;}
+.experience-details li {margin-bottom: 6px; color: var(--muted);}
+
+/* Alternating contrast blocks */
+article.alt{background:var(--wash);border-left-color:var(--muted)}
+article.alt .bib{background:var(--sheet)}
+article.current{background:var(--feat-bg);color:var(--feat-ink);border-color:var(--feat-bg);border-left-color:#60A5FA;padding:28px 30px}
+article.current h3{font-size:23px;color:var(--feat-ink)}
+article.current .authors{font-family:var(--sans);font-size:16.5px;color:var(--feat-muted)}
+article.current .authors strong{color:var(--feat-ink);font-weight:700;}
+article.current .summary,article.current .venue em{color:var(--feat-ink)}
+article.current .venue{color:var(--feat-muted)}
+article.current .btn.primary{background:var(--feat-ink);color:var(--feat-bg);border-color:var(--feat-ink)}
+
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;font-family:var(--sans);font-size:15px;align-items:center}
+.btn,summary{display:inline-block;padding:6px 14px;border:1px solid var(--rule);border-radius:4px;text-decoration:none;cursor:pointer;background:transparent;color:var(--accent);font:600 15px var(--sans);list-style:none}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn:hover,summary:hover{background:var(--wash);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.1)}
+summary::-webkit-details-marker{display:none}
+details[open]>summary{background:var(--wash)}
+details.cite{flex-basis:100%}
+details.cite>summary{display:inline-block}
+.bib{margin-top:12px;background:var(--wash);border:1px solid var(--rule);border-radius:4px;padding:14px 16px}
+.bib pre{margin:0;overflow-x:auto;font:14px/1.5 var(--mono);white-space:pre;color:var(--ink)}
+.bib button{margin-top:12px}
+.doi{font-family:var(--mono);font-size:13px;color:var(--muted);margin-left:2px;letter-spacing:-.01em}
+
+/* Enhanced Dropdown Containers */
+details.exp-dropdown {background: var(--sheet); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 4px; padding: 20px 24px; margin-top: 40px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: border-color 0.2s;}
+details.exp-dropdown:hover {border-color: var(--accent); background: var(--wash);}
+details.exp-dropdown summary {font-family: var(--serif); font-size: 22px; font-weight: 700; color: var(--ink); border: none; padding: 0; background: transparent !important; display: flex; align-items: center; justify-content: space-between; user-select: none;}
+details.exp-dropdown summary::after {content: "▼"; font-family: var(--sans); font-size: 14px; color: var(--accent); transition: transform 0.2s; margin-left: 12px;}
+details.exp-dropdown[open] summary::after {transform: rotate(180deg);}
+details.exp-dropdown summary:hover {color: var(--accent); background: transparent !important;}
+.exp-hint {display: block; font-family: var(--sans); font-size: 13.5px; font-weight: 400; color: var(--muted); margin-top: 4px;}
+.exp-content {margin-top: 20px; border-top: 1px solid var(--rule); padding-top: 20px;}
+
+footer{margin-top:64px;padding-top:16px;border-top:1px solid var(--rule);font-family:var(--sans);font-size:14px;color:var(--muted)}
+
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;gap:40px;padding:40px 20px 72px}
+  aside{position:static}
+  aside h1{white-space:normal;}
+  article{padding:18px}
+  main h2.year{font-size:40px}
+}
+@media print{.actions{display:none}.layout{display:block}article{break-inside:avoid;border:0;border-left:2px solid #000}}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside>
+    <div class="masthead-tag">Research Profile &middot; Geo-Energy / CCUS / H&#8322; / AI</div>
+    <h1>Richards O. Okiemute</h1>
+    
+    <div class="profile-links">
+      <a href="https://www.researchgate.net/profile/Richards-Okiemute-2" target="_blank" rel="noopener">ResearchGate Profile</a>
+      <a href="https://orcid.org/0009-0009-3644-5814" target="_blank" rel="noopener">ORCID Record</a>
+      <a href="mailto:richards.okiemute@gmail.com">Contact via Email</a>
+    </div>
+
+    <p class="role">Geo-energy researcher specializing in Hydrogen storage, CCUS, and subsurface AI systems.</p>
+
+    <h2>Research Interests:</h2>
+    <ul class="interests">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="7" cy="12" r="3.2"/><circle cx="17" cy="12" r="3.2"/><line x1="10.2" y1="12" x2="13.8" y2="12"/></svg> Geo-energy (CCUS and Hydrogen storage)</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6q4.5-2.5 9 0t9 0"/><path d="M3 12q4.5-2.5 9 0t9 0"/><path d="M3 18q4.5-2.5 9 0t9 0"/></svg> Sustainable energy &amp; Next-Gen systems (Power-to-X)</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="5" cy="5" r="1.8"/><circle cx="19" cy="5" r="1.8"/><circle cx="12" cy="19" r="1.8"/><line x1="6.3" y1="6.3" x2="11" y2="16.8"/><line x1="17.7" y1="6.3" x2="13" y2="16.8"/><line x1="6.8" y1="5" x2="17.2" y2="5"/></svg> Applied AI in energy systems</li>
+    </ul>
+
+    <div class="count">
+      <div><b>7</b><span>publications</span></div>
+      <div><b>2024–26</b><span>years active</span></div>
+    </div>
+
+    <div class="nav-jumps">
+      <span>Quick Jumps:</span>
+      <a href="#publications-block">↓ Publications</a>
+      <a href="#experience-section">↓ Research &amp; Fellowship Experience</a>
+      <a href="#education-section">↓ Education</a>
+    </div>
+  </aside>
+
+  <main>
+    <div class="intro">
+      <p>Explore Richards Okiemute's peer-reviewed publications on Geo-energy (CCUS and Hydrogen storage), sustainable energy systems, and applied computational methods.</p>
+    </div>
+
+    <div id="publications-block"></div>
+
+    <section aria-labelledby="current">
+      <h2 class="year" id="current" style="font-size:34px">Current research</h2>
+      <article class="current">
+        <svg class="current-watermark" viewBox="0 0 220 220" fill="none" stroke="white" stroke-width="2" aria-hidden="true">
+          <path d="M-10,48 Q45,36 110,48 T230,48"/>
+          <path d="M-10,86 Q45,74 110,86 T230,86"/>
+          <path d="M-10,124 Q45,112 110,124 T230,124"/>
+          <path d="M-10,162 Q45,150 110,162 T230,162"/>
+          <line x1="168" y1="0" x2="168" y2="220" stroke-dasharray="3 5"/>
+          <circle cx="168" cy="48" r="3" fill="white" stroke="none"/>
+        </svg>
+        <div class="tags"><span class="tag">Nuclear</span><span class="tag">Policy</span><span class="tag">Africa Energy</span></div>
+        <h3>African Nuclear Standards and Technology Development Initiative</h3>
+        <p class="authors"><strong>Richards Okiemute</strong>, Research Fellow</p>
+        <p class="venue"><em>ASME Engineering for Change (E4C) Fellowship</em>, in partnership with the American Society of Mechanical Engineers (ASME). Ongoing.</p>
+        <p class="summary">A structured assessment of the nuclear energy landscape across African nations: mapping national energy plans and key stakeholders, documenting knowledge gaps in nuclear technology standards, and reviewing the investment landscape. The output is a region-specific intelligence package to guide standards development and Africa–EU collaboration.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://www.engineeringforchange.org/projects/african-nuclear-standards-and-technology-development-initiative/#overview">View project page</a>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="y2026">
+      <h2 class="year" id="y2026">2026</h2>
+
+      <article class="alt">
+        <div class="tags"><span class="tag">CCUS</span><span class="tag">Hydrogen Storage</span><span class="tag">Geothermal</span><span class="tag">AI/ML</span></div>
+        <h3>Artificial Intelligence in Subsurface Energy Systems: A Comprehensive Review of CO₂ Storage, Hydrogen Storage, and Geothermal Energy</h3>
+        <p class="authors"><strong>Okiemute, R. O.*</strong>, Oyetunji, O. S., Yakubu, K. S., Ibrahim, U. F., Olude, D. A., &amp; Abubakar, A.</p>
+        <p class="venue"><em>Science World Journal</em>, 21(3), 928&ndash;936. Published 29 September 2026.</p>
+        <p class="venue">*Corresponding author</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">The global shift toward clean energy is turning deep underground rock layers into a vital infrastructure for storing energy and cutting carbon emissions. This paper examines how computer models and smart data tools are being used to improve three major areas: capturing and burying carbon dioxide, storing hydrogen underground for later use, and tapping into volcanic heat for geothermal energy. By analyzing 46 relevant peer-reviewed studies, this review shows how these models can quickly assess underground sites, monitor for gas leaks, handle the stress of repeated storage cycles, and help prevent small earthquakes. It compares the readiness of each technology, addresses current hurdles such as data gaps and the difficulty of interpreting "black box" models, and explores future trends including secure data sharing and automated safety systems.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://scienceworldjournal.org/article/view/24856">View article</a>
+          <a class="btn" href="https://scienceworldjournal.org/article/view/24856/15549">PDF</a>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib7">@article{okiemute2026subsurface,
+  author  = {Okiemute, Richards Obada and Oyetunji, Oluwatimilehin Samuel and Yakubu, Kabiru Sani and Ibrahim, Umar Faruk and Olude, Dolapo Abraham and Abubakar, Abdulbasid},
+  title   = {Artificial Intelligence in Subsurface Energy Systems: A Comprehensive Review of {CO$_2$} Storage, Hydrogen Storage, and Geothermal Energy},
+  journal = {Science World Journal},
+  volume  = {21},
+  number  = {3},
+  pages   = {928--936},
+  year    = {2026},
+  url     = {https://scienceworldjournal.org/article/view/24856}
+}</pre>
+              <button class="btn" data-copy="bib7">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="y2025">
+      <h2 class="year" id="y2025">2025</h2>
+
+      <article>
+        <div class="tags"><span class="tag">Nuclear Fusion</span><span class="tag">AI/ML</span><span class="tag">Sustainable Energy</span></div>
+        <h3>Application of Artificial Intelligence in Shaping the Future of Sustainable Nuclear Fusion Energy</h3>
+        <p class="authors">Emmanuel, E. T., Thanni, A. A., Jimson, I. O., <strong>Okiemute, R. O.</strong>, Muritala, I. O., &amp; Igbokwe, O. F.</p>
+        <p class="venue"><em>World Journal of Advances in Engineering and Technology Studies (WJAETS)</em>, 17(01), 041–060. 2025.</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">This review examines the expanding contribution of artificial intelligence to fusion science, focusing on machine learning and deep learning for modelling, control and data interpretation. Drawing on a decade of peer-reviewed work, it finds that these methods enable markedly faster diagnostic inference, real-time plasma control through reinforcement learning, and large reductions in transport-model computation and cost through physics-informed neural networks, while AI&ndash;physics hybrid modelling lifts predictive accuracy beyond conventional simulation. It also sets out persistent challenges: fusion data remains hard to standardise, many models lack interpretability, reactors demand frequent recalibration, and ethical and operational constraints slow roll-out. The review argues that AI in fusion must become more physics-aware, adaptive and transparent, complementing rather than replacing the traditional scientific method.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://doi.org/10.30574/wjaets.2025.17.1.1378">View article</a>
+          <span class="doi">DOI 10.30574/wjaets.2025.17.1.1378</span>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib1">@article{emmanuel2025fusion,
+  author  = {Emmanuel, E. T. and Thanni, A. A. and Jimson, I. O. and Okiemute, R. O. and others},
+  title   = {Application of Artificial Intelligence in Shaping the Future of Sustainable Nuclear Fusion Energy},
+  journal = {World Journal of Advances in Engineering and Technology Studies},
+  volume  = {17},
+  number  = {1},
+  pages   = {041--060},
+  year    = {2025},
+  doi     = {10.30574/wjaets.2025.17.1.1378}
+}</pre>
+              <button class="btn" data-copy="bib1">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="alt">
+        <div class="tags"><span class="tag">AI/ML</span><span class="tag">Oil &amp; Gas</span><span class="tag">Predictive Maintenance</span></div>
+        <h3>Leveraging Machine Learning and Data Analytics for Equipment Reliability in Oil and Gas Using Predictive Maintenance</h3>
+        <p class="authors">Ekunke, O. V., <strong>Okiemute, R. O.</strong>, Oke, B. O., Jimson, I. O., Iwalokun, A. O., Akinbolusere, M. O., &amp; Pius, A. B.</p>
+        <p class="venue"><em>World Journal of Advanced Research and Reviews</em>, 25(01), 2212&ndash;2218. January 2025.</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">The oil and gas industry operates under extreme conditions that make equipment reliability a persistent challenge. Predictive maintenance, now possible through machine learning and data analytics, is changing equipment management by enabling real-time failure prediction, reducing unplanned downtime and optimising maintenance schedules. This review covers advances in supervised and unsupervised machine learning, deep learning models and integration with IoT and big-data analytics, and summarises case studies from major international oil companies including Shell, BP, ExxonMobil, Chevron and TotalEnergies. It compares key performance indicators between traditional and predictive approaches and examines the advantages, challenges and future opportunities of predictive maintenance for operational efficiency and sustainability in the sector.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://doi.org/10.30574/wjarr.2025.25.1.0295">View article</a>
+          <span class="doi">DOI 10.30574/wjarr.2025.25.1.0295</span>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib2">@article{ekunke2025predictive,
+  author  = {Ekunke, Onyeka Virginia and Okiemute, Richards Obada and Oke, Bioluwatife Oluwaferanmi and Jimson, Israel Oluwaseun and Iwalokun, Austine Oluwole and Akinbolusere, Michael Oluwatosin and Pius, Awe Boluwatife},
+  title   = {Leveraging Machine Learning and Data Analytics for Equipment Reliability in Oil and Gas Using Predictive Maintenance},
+  journal = {World Journal of Advanced Research and Reviews},
+  volume  = {25},
+  number  = {1},
+  pages   = {2212--2218},
+  month   = jan,
+  year    = {2025},
+  doi     = {10.30574/wjarr.2025.25.1.0295}
+}</pre>
+              <button class="btn" data-copy="bib2">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="y2024">
+      <h2 class="year" id="y2024">2024</h2>
+
+      <article class="alt">
+        <div class="tags"><span class="tag">CCUS</span><span class="tag">Downstream</span><span class="tag">Emissions</span></div>
+        <h3>Investigation into the Feasibility and Efficiency of Implementing Carbon Capture and Storage Technologies in Downstream Facilities: To Mitigate Greenhouse Gas Emissions</h3>
+        <p class="authors">Godwin, E. O., Odey, P. O., <strong>Okiemute, R. O.</strong>, Owunna, I. B., Asere, J. B., &amp; Enem, C. E.</p>
+        <p class="venue"><em>World Journal of Advanced Research and Reviews</em>, 24(02), 1004&ndash;1016. November 2024.</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">This research investigates the feasibility and efficiency of carbon capture and storage (CCS) technologies in downstream oil and gas facilities, such as refining, distribution, petrochemical production and retail, as a means of cutting greenhouse gas emissions. It examines three primary CCS techniques &mdash; post-combustion, pre-combustion and oxy-fuel combustion &mdash; each of which permits continued use of fossil-fuel sources while reducing CO&#8322; output. Post-combustion suits retrofitting existing plants, pre-combustion captures CO&#8322; at around 90% efficiency while producing hydrogen as a by-product, and oxy-fuel combustion yields a pure CO&#8322; stream for new-build facilities. The study also covers CCS applications in enhanced oil recovery and industrial decarbonisation, and weighs high costs, infrastructure needs and regulatory requirements against each technology's suitability for existing or new installations.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://doi.org/10.30574/wjarr.2024.24.2.3438">View article</a>
+          <span class="doi">DOI 10.30574/wjarr.2024.24.2.3438</span>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib3">@article{godwin2024ccs,
+  author  = {Godwin, Ekunke Odor and Odey, Peter Odey and Okiemute, Richards Obada and Owunna, Ikechukwu Bismarck and Asere, Joshua Babatunde and Enem, Chukwudike Eric},
+  title   = {Investigation into the Feasibility and Efficiency of Implementing Carbon Capture and Storage Technologies in Downstream Facilities: To Mitigate Greenhouse Gas Emissions},
+  journal = {World Journal of Advanced Research and Reviews},
+  volume  = {24},
+  number  = {2},
+  pages   = {1004--1016},
+  month   = nov,
+  year    = {2024},
+  doi     = {10.30574/wjarr.2024.24.2.3438}
+}</pre>
+              <button class="btn" data-copy="bib3">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article>
+        <div class="tags"><span class="tag">EOR</span><span class="tag">Reservoir Eng.</span><span class="tag">Biopolymers</span></div>
+        <h3>Enhanced Oil Recovery Methods Using Biodegradable Materials in Different Reservoirs</h3>
+        <p class="authors">Ekunke, O. V., Nzereogu, S. K., Uyanah, J. J., <strong>Okiemute, R. O.</strong>, Ikechukwu, S. V., Ifechukwu, E. J., Collins, I., Chadi, P., Ibe, M. E., &amp; Dauda, Y. P.</p>
+        <p class="venue"><em>Global Scientific Journal (GSJ)</em>, 12(9), 647&ndash;664. September 2024.</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">This review examines the use of biodegradable materials in enhanced oil recovery (EOR), highlighting their environmental benefits over traditional methods, and explores how biosurfactants, biopolymers and microbial formulations perform in different reservoir types. Biosurfactants, derived from microorganisms and plants, reduce interfacial tension and improve recovery in sandstone and carbonate reservoirs; biopolymers such as guar gum and xanthan gum improve fluid stability and sweep efficiency in heavy-oil and unconventional reservoirs; and microbial EOR uses bacteria to maximise oil displacement. The review weighs the advantages and limitations of these materials, including technical and industry-adoption challenges, and closes with recommendations for advancing biodegradable EOR technologies to improve sustainability and reduce environmental impact.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://www.globalscientificjournal.com/researchpaper/ENHANCED_OIL_RECOVERY_METHODS_USING_BIODEGRADABLE_MATERIALS_IN_DIFFERENT_RESERVOIRS_.pdf">Read PDF</a>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib4">@article{ekunke2024eor,
+  author  = {Ekunke, Onyeka Virginia and Nzereogu, Stella Kosi and Uyanah, Joseph Junior and Okiemute, Richards Obada and Ikechukwu, Stephen Victor and Ifechukwu, Enem Jeffery and Collins, Ikiebe and Chadi, Paul and Ibe, Madujibeya Ebuka and Dauda, Yusuf Peter},
+  title   = {Enhanced Oil Recovery Methods Using Biodegradable Materials in Different Reservoirs},
+  journal = {Global Scientific Journal},
+  volume  = {12},
+  number  = {9},
+  pages   = {647--664},
+  month   = sep,
+  year    = {2024}
+}</pre>
+              <button class="btn" data-copy="bib4">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article class="alt">
+        <div class="tags"><span class="tag">Drilling</span><span class="tag">Sustainability</span><span class="tag">Oil &amp; Gas</span></div>
+        <h3>Advancements in Eco-friendly Drilling Fluids: A Review of Recent Innovations and Their Environmental Impacts</h3>
+        <p class="authors">Ekunke, O. V., Nzereogu, S. K., Oluyimika, J. O., <strong>Okiemute, R. O.</strong>, Agbonze, N. G., Ugbine, O. F., &amp; Bello, A. R.</p>
+        <p class="venue"><em>International Journal of Advances in Engineering and Management (IJAEM)</em>, 6(9), 179&ndash;187. September 2024.</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">With growing environmental concerns, the oil and gas industry is increasingly turning to sustainable alternatives to traditional drilling fluids, which have been linked to ecological damage. This review examines recent advances in eco-friendly drilling fluids, focusing on biodegradable and non-toxic formulations &mdash; biopolymers, biosurfactants and plant-based oils &mdash; and their potential to replace conventional fluids across different geological settings. It addresses the scalability and economic viability of these alternatives, their effectiveness under extreme drilling conditions, and their compatibility with existing drilling technologies, while noting that significant gaps remain in long-term environmental-impact studies and comprehensive risk assessment. The review also considers the role of regulatory frameworks in supporting adoption, aiming to guide the industry toward more environmentally responsible drilling practices without sacrificing performance.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://ijaem.net/issue_dcp/Advancing%20the%20Use%20of%20Marine%20Algae%20as%20a%20Carbon%20Sink%20and%20Bio%20fuel%20Source%20in%20Offshore%20Oil%20and%20Gas%20Operations..pdf">Read PDF</a>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib5">@article{ekunke2024drilling,
+  author  = {Ekunke, Onyeka Virginia and Nzereogu, Stella Kosi and Oluyimika, Jaiyeola Omowoleola and Okiemute, Richards Obada and Agbonze, Nosa Godwin and Ugbine, Oghenefegor Favour and Bello, Afolabi Ridwan},
+  title   = {Advancements in Eco-friendly Drilling Fluids: A Review of Recent Innovations and Their Environmental Impacts},
+  journal = {International Journal of Advances in Engineering and Management},
+  volume  = {6},
+  number  = {9},
+  pages   = {179--187},
+  month   = sep,
+  year    = {2024}
+}</pre>
+              <button class="btn" data-copy="bib5">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <article>
+        <div class="tags"><span class="tag">IoT</span><span class="tag">AI/ML</span><span class="tag">Cybersecurity</span></div>
+        <h3>Identifying Internet of Things Devices through Unique Digital Signatures and Advanced Machine Learning Techniques</h3>
+        <p class="authors">Akintayo, T. A., <strong>Okiemute, R. O.</strong>, Owoeye, M. C., Balogun, O. S., Paul, C., Queenet, M. M. C., Okereke, R. O., Moluno, R. C., Adediran, A. S., Nzeanorue, C. C., Ngozi, E. R., &amp; Madukwe, C. M.</p>
+        <p class="venue"><em>Path of Science</em>, 10(7), 1001&ndash;1007. July 2024.</p>
+        <details class="cite">
+          <summary>Abstract</summary>
+          <div class="abstract">The rapid growth of the Internet of Things (IoT) has led to a surge in connected devices across sectors, making reliable device recognition increasingly important. This paper proposes a device-fingerprinting method that analyses network behaviour, communication patterns and hardware features, using machine learning to classify device fingerprints with high accuracy across sensors, actuators and intelligent appliances. The method effectively detects suspicious devices and has low computational overhead, making it suitable for real-time deployment; its effectiveness is demonstrated through testing and validation on multiple IoT datasets. The approach offers benefits for IoT ecosystem management, including enhanced security, improved network management and greater visibility into device behaviour.</div>
+        </details>
+        <div class="actions">
+          <a class="btn primary" href="https://pathofscience.org/index.php/ps/article/view/3201">View article</a>
+          <details class="cite">
+            <summary>Cite</summary>
+            <div class="bib">
+<pre id="bib6">@article{akintayo2024iot,
+  author  = {Akintayo, Taiwo Abdulahi and Okiemute, Richards Obada and Owoeye, Moyosore Celestina and Balogun, Oluwaseyi Sulaimon and Paul, Chadi and Queenet, Madumere Madumere Chiamaka and Okereke, Ruth Onyekachi and Moluno, Richie Chukwunalu and Adediran, Adedokun Seyi and Nzeanorue, Christian Chukwuemeka and Ngozi, Egenuka Rhoda and Madukwe, Chika Moses},
+  title   = {Identifying Internet of Things Devices through Unique Digital Signatures and Advanced Machine Learning Techniques},
+  journal = {Path of Science},
+  volume  = {10},
+  number  = {7},
+  pages   = {1001--1007},
+  month   = jul,
+  year    = {2024}
+}</pre>
+              <button class="btn" data-copy="bib6">Copy BibTeX</button>
+            </div>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Research and Fellowship Experience Dropdown Section -->
+    <section aria-labelledby="experience-section" id="experience-section">
+      <details class="exp-dropdown">
+        <summary>
+          <span>Research and Fellowship Experience</span>
+          <span class="exp-hint">(Click to expand / collapse)</span>
+        </summary>
+        <div class="exp-content">
+          <div class="experience-item">
+            <h4>Research Fellow | ASME Engineering for Change (E4C) Fellowship</h4>
+            <p class="experience-meta">May 2026 – Nov 2026</p>
+            <ul class="experience-details">
+              <li>Conducting desktop research on Africa Nuclear Energy and Technology Development Initiatives across South Africa, Egypt, Nigeria, Ghana, and Kenya.</li>
+              <li>Leading research on South Africa’s energy landscape, energy mix including Green Hydrogen, biomass, hydropower, solar energy, CSP, wind power, and emerging energy technologies (P2X, EVs).</li>
+              <li>Developing Stakeholders Mapping database and evaluating local/international supply chains in South Africa's energy ecosystem.</li>
+            </ul>
+          </div>
+          
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Graduate Research Assistant | University of Benin, Nigeria</h4>
+            <p class="experience-meta">Jan 2023 – Nov 2025</p>
+            <ul class="experience-details">
+              <li>Developed CO₂StoreCap, an assistant for estimating storage capacity, assessing trapping and leakage risks, and optimizing injection and monitoring strategies.</li>
+              <li>Designed a K-Means clustering model for lithology classification in sandstone–shale intercalations, enhancing understanding of subsurface heterogeneity.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Graduate Research Engineer (Computational Modeling &amp; Systems Optimization) | Welltec Oilfield Services</h4>
+            <p class="experience-meta">Jan 2020 – May 2022</p>
+            <ul class="experience-details">
+              <li>Conducted data collection, cleaning, and transformation for model training and validation.</li>
+              <li>Applied Random Forest, Linear Regression, and XGBoost to automate system performance prediction, achieving an R² score of 97.43% and reducing operational downtime by 15%.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Mathematics Teacher | Government Girls Secondary School (UBE), Rivers State, Nigeria (NYSC)</h4>
+            <p class="experience-meta">Feb 2019 – Oct 2020</p>
+            <ul class="experience-details">
+              <li>Taught mathematics to Junior Secondary School classes (age group 8–13 years) for two terms.</li>
+              <li>Improved student passing score by 83% from 45%.</li>
+              <li>Graded over 200 examinations and test scripts.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Undergraduate Researcher | Petroleum Training Institute (PTI), Delta State, Nigeria</h4>
+            <p class="experience-meta">Jul 2018 – Sept 2018</p>
+            <ul class="experience-details">
+              <li><strong>Thesis:</strong> Analysis of Water Coning in Vertical Oil Wells in Niger Delta.</li>
+              <li>Performed parametric and sensitivity analysis using four models (Meyer and Garder, Schols, Chaperon, Hoyland et al.) to determine water breakthrough time and critical production rates.</li>
+              <li>Identified Hoyland et al. for optimal production rates and Meyer and Garder for breakthrough time prediction.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Undergraduate Researcher (National Diploma) | Petroleum Training Institute (PTI), Delta State, Nigeria</h4>
+            <p class="experience-meta">May 2014 – Oct 2014</p>
+            <ul class="experience-details">
+              <li><strong>Thesis:</strong> Reservoir Pressure Maintenance to Increase Oil Production by Water Injection Method (Obagi Oil Field, OML 58).</li>
+              <li>Conducted case study analyzing historical production and pressure trend data (1964–1996) to evaluate water injection as a secondary recovery method.</li>
+              <li>Performed correlation analysis showing increased injection volumes drove production recovery to 62,625 BOPD.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Gas Development &amp; Energy Analyst Intern | Nigeria National Petroleum Corporation (NNPC-NAPIMS)</h4>
+            <p class="experience-meta">Apr 2017 – Sept 2017</p>
+            <ul class="experience-details">
+              <li>Reviewed First E&amp;P's OML 83 &amp; 85 gas development plan and strategy, evaluating phased processing build-out (300 MMscfd initial, scaling to 900 MMscfd) against a joint production forecast plateau of 640 MMscfd.</li>
+              <li>Contributed to review of Assa North Field Development Plan (FDP) and supported gas division's gas flare-out programme compliance tracking.</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Education Dropdown Section -->
+    <section aria-labelledby="education-section" id="education-section">
+      <details class="exp-dropdown">
+        <summary>
+          <span>Education</span>
+          <span class="exp-hint">(Click to expand / collapse)</span>
+        </summary>
+        <div class="exp-content">
+          <div class="experience-item">
+            <h4>BSc. Petroleum Engineering | University of Benin, Nigeria</h4>
+            <p class="experience-meta">Feb 2015 – Sept 2018</p>
+            <ul class="experience-details">
+              <li><strong>Dissertation:</strong> Analysis of Water Coning in Vertical Oil Wells in Niger Delta, Nigeria.</li>
+              <li><strong>Advisor:</strong> Professor Ohenhen Ikponmwosa.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Diploma in Petroleum Engineering Technology | Petroleum Training Institute, Nigeria</h4>
+            <p class="experience-meta">Nov 2011 – Oct 2014</p>
+            <ul class="experience-details">
+              <li><strong>Dissertation:</strong> Reservoir Pressure Maintenance to Improve Oil Production from Depleted Reservoirs.</li>
+              <li><strong>Advisor:</strong> Engr. Frank Egede.</li>
+            </ul>
+            <p style="margin-top:10px; font-family:var(--sans); font-size:15px; color:var(--muted);"><strong>Overall CGPA (WES Evaluated):</strong> <span style="color:var(--ink);">3.39/4.0</span></p>
+          </div>
+
+          <div class="experience-item" style="margin-top:24px;">
+            <h4>Standardized Test Scores</h4>
+            <ul class="experience-details">
+              <li><strong>Graduate Record Examination (GRE):</strong> 333/340 (Verbal: 164, Quantitative: 169, AW: 3.5)</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      <span id="yr"></span> Richards O. Okiemute. Links point to the publishers' own pages; copyright remains with the respective journals and authors.
+    </footer>
+  </main>
+</div>
+
+<script>
+document.getElementById('yr').textContent = '\u00A9 ' + new Date().getFullYear();
+document.querySelectorAll('[data-copy]').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var text = document.getElementById(btn.dataset.copy).textContent;
+    var done = function () {
+      btn.textContent = 'Copied';
+      setTimeout(function () { btn.textContent = 'Copy BibTeX'; }, 1800);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done); }
+    else {
+      var ta = document.createElement('textarea'); ta.value = text;
+      document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+      document.body.removeChild(ta); done();
+    }
+  });
+});
+</script>
+</body>
+</html>
