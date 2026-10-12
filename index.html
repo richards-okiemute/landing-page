@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Richards Okiemute | Sustainable energy development with data and AI</title>
-<meta name="description" content="Petroleum engineer applying cloud and machine learning across energy systems. ASME E4C Research Fellow. Founder of free communities for African youths.">
+<meta name="description" content="Energy researcher and engineer applying machine learning and data analysis across energy systems. ASME E4C Research Fellow. Founder of free communities for African youths.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Richards Okiemute | Sustainable energy development with data and AI">
 <meta property="og:description" content="Petroleum engineer and ASME E4C Research Fellow. Research and free communities reaching 7,500+ people.">
@@ -34,10 +34,13 @@ body{overflow-x:hidden;position:relative;isolation:isolate;font-family:var(--bod
 a{color:inherit}
 a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
-.page{max-width:1180px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;margin:0 auto;padding:clamp(2rem,6vw,5rem) 1.5rem 2rem;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px))}
+.page{max-width:1040px;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;margin:0 auto;padding:clamp(2rem,6vw,5rem) 1.5rem 2rem;padding-left:max(1.5rem,env(safe-area-inset-left,0px));padding-right:max(1.5rem,env(safe-area-inset-right,0px))}
 .contour{position:absolute;z-index:-1;top:.5rem;right:0;width:min(460px,75%);height:auto;color:var(--green);opacity:.2;pointer-events:none}
-.contour.low{top:auto;bottom:0;right:auto;left:0;width:min(380px,65%)}
+.contour.low{top:auto;bottom:5rem;right:auto;left:0;width:min(380px,65%)}
 @media(max-width:1099px){.contour{opacity:.1}}
+@media(max-width:759px){.contour.r{display:none}}
+.contour.low.r{left:auto;right:0}
+.earth{display:none;color:var(--green)}
 @media(prefers-reduced-motion:no-preference){
   .rotor{animation:spin 22s linear infinite}
   .rotor.b{animation-duration:28s}
@@ -46,6 +49,15 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
   .rotor.e{animation-duration:20s}
   .wave{stroke-dasharray:6 12;animation:flow 18s linear infinite}
   .wave.b{animation-duration:26s}
+  .sway{animation:sway 7s ease-in-out infinite alternate}
+  .sway.b{animation-duration:9s;animation-delay:-3s}
+  .meridian{animation:turn 16s linear infinite}
+  .meridian.b{animation-delay:-5.3s}
+  .meridian.c{animation-delay:-10.6s}
+  .sheen{animation:sheen 7s ease-in-out infinite}
+  @keyframes sway{from{transform:rotate(-2.5deg)}to{transform:rotate(2.5deg)}}
+  @keyframes turn{from{transform:scaleX(1)}to{transform:scaleX(-1)}}
+  @keyframes sheen{0%{transform:translateX(-50px);opacity:0}30%,70%{opacity:.7}100%{transform:translateX(90px);opacity:0}}
   @keyframes spin{to{transform:rotate(360deg)}}
   @keyframes flow{to{stroke-dashoffset:-72}}
 }
@@ -54,7 +66,9 @@ a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .photo{width:150px;aspect-ratio:1;border-radius:12px;background:var(--line);color:var(--muted);font-family:var(--display);font-weight:800;font-size:2.4rem;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
 .name{font-weight:600;color:var(--muted);margin-bottom:.4rem}
-h1{font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,5vw,4.2rem);line-height:1.08;letter-spacing:-.025em}
+h1{color:#2f7d62;font-family:var(--display);font-weight:800;font-size:clamp(2.1rem,4.6vw,3.8rem);line-height:1.08;letter-spacing:-.025em}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) h1{color:#68bfa0}}
+:root[data-theme="dark"] h1{color:#68bfa0}
 .lede{margin-top:1rem;max-width:60ch;font-size:1.2rem}
 .cred{margin-top:1rem;max-width:58ch;color:var(--muted);font-size:.97rem}
 
@@ -76,11 +90,12 @@ footer{margin-top:auto;padding-top:2.5rem;font-size:.85rem;color:var(--muted)}
 @media(min-width:760px){
   .intro{grid-template-columns:240px 1fr;gap:2.6rem}
   .photo{width:240px;font-size:4rem}
+  .earth{display:block;width:130px;margin:2.4rem 0 0 55px;opacity:.3}
   h1{max-width:10.5em}
   .contour{width:380px;right:-50px}
   .routes{grid-template-columns:1fr 1fr;gap:1.4rem}
 }
-@media(min-width:1280px){
+@media(min-width:1360px){
   .contour{width:520px;right:0}
   .contour.low{width:440px}
 }
@@ -89,8 +104,8 @@ footer{margin-top:auto;padding-top:2.5rem;font-size:.85rem;color:var(--muted)}
 <body>
 <div class="page">
   <svg class="contour" viewBox="0 0 440 300" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-    <circle cx="200" cy="58" r="26"/>
-    <circle cx="200" cy="58" r="40" opacity=".6"/>
+    <circle cx="360" cy="40" r="22"/>
+    <circle cx="360" cy="40" r="34" opacity=".6"/>
     <path d="M0 245C80 225 140 250 220 240S360 225 440 245"/>
     <path class="wave" d="M0 268C40 252 80 284 120 268S200 252 240 268S320 284 360 268S420 252 440 268"/>
     <path class="wave b" d="M0 286C40 270 80 302 120 286S200 270 240 286S320 302 360 286S420 270 440 286" opacity=".6"/>
@@ -100,18 +115,23 @@ footer{margin-top:auto;padding-top:2.5rem;font-size:.85rem;color:var(--muted)}
     <path d="M390 140V238"/>
     <g class="rotor b" style="transform-origin:390px 140px"><path d="M390 140V92M390 140L431.6 164M390 140L348.4 164"/></g>
     <circle cx="390" cy="140" r="3"/>
-    <path d="M210 170V244"/>
-    <g class="rotor c" style="transform-origin:210px 170px"><path d="M210 170V135M210 170L240.3 187.5M210 170L179.7 187.5"/></g>
-    <circle cx="210" cy="170" r="2.5"/>
   </svg>
   <main>
     <header class="intro">
       <!-- Replace the initials with: <img src="data:image/jpeg;base64,..." alt="Portrait of Richards Okiemute"> -->
-      <div class="photo" aria-hidden="true">RO</div>
+      <div class="side"><div class="photo" aria-hidden="true">RO</div>
+        <svg class="earth" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+          <circle cx="60" cy="60" r="50"/>
+          <path d="M10 60H110M17 35H103M17 85H103" opacity=".6"/>
+          <path d="M60 10V110" opacity=".4"/>
+          <ellipse class="meridian" cx="60" cy="60" rx="20" ry="50" style="transform-origin:60px 60px"/>
+          <ellipse class="meridian b" cx="60" cy="60" rx="35" ry="50" style="transform-origin:60px 60px"/>
+          <ellipse class="meridian c" cx="60" cy="60" rx="50" ry="50" style="transform-origin:60px 60px" opacity=".6"/>
+        </svg></div>
       <div>
         <p class="name">Richards Okiemute</p>
         <h1>Sustainable energy development with data and AI.</h1>
-        <p class="lede">I am a petroleum engineer applying cloud and machine learning across energy systems. My research covers Geo Energy, Sustainable Energy Development and decarbonisation. I also run free communities that connect African youths to global opportunities.</p>
+        <p class="lede">I am an energy researcher and engineer applying machine learning and data analysis across energy systems. My research covers Geo Energy, energy systems, decarbonisation and net-zero transitions. I also run free communities that connect African youths to global opportunities.</p>
         <p class="cred">ASME E4C Research Fellow, Linux Foundation LiFT Scholar, AWS Community Builder, Microsoft Certified Trainer.</p>
       </div>
     </header>
@@ -120,7 +140,7 @@ footer{margin-top:auto;padding-top:2.5rem;font-size:.85rem;color:var(--muted)}
       <a class="route research" href="https://richardsokiemute.com/research/" target="_blank" rel="noopener">
         <small>For graduate programmes, supervisors and collaborators</small>
         <h2>Research</h2>
-        <p>Geo Energy, Sustainable Energy Development, AI for energy systems, decarbonisation and CCUS, and nuclear and clean-energy standards in Africa.</p>
+        <p>Energy systems, renewable and sustainable energy, decarbonisation, Geo Energy and net-zero transitions, using data and AI. Includes a study of nuclear and clean-energy standards in Africa.</p>
         <p class="fact">ASME E4C Research Fellow</p>
         <span class="open">Open research page</span>
       </a>
@@ -150,6 +170,18 @@ footer{margin-top:auto;padding-top:2.5rem;font-size:.85rem;color:var(--muted)}
     <path d="M250 95V144"/>
     <g class="rotor e" style="transform-origin:250px 95px"><path d="M250 95V57M250 95L282.9 114M250 95L217.1 114"/></g>
     <circle cx="250" cy="95" r="2.5"/>
+    <path class="wave" d="M0 172C30 160 60 184 90 172S150 160 180 172S240 184 270 172S330 160 360 172"/>
+    <path class="wave b" d="M0 188C30 176 60 200 90 188S150 176 180 188S240 200 270 188S330 176 360 188" opacity=".6"/>
+  </svg>
+  <svg class="contour low r" viewBox="0 0 360 200" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <defs><clipPath id="pnl"><path d="M235 135L262 108H335L308 135Z"/></clipPath></defs>
+    <path d="M0 150C70 138 150 158 220 148S320 138 360 150"/>
+    <g class="sway" style="transform-origin:70px 150px"><path d="M70 150V98"/><circle cx="70" cy="80" r="22" fill="currentColor" fill-opacity=".15"/><circle cx="54" cy="98" r="14" fill="currentColor" fill-opacity=".15"/><circle cx="86" cy="98" r="14" fill="currentColor" fill-opacity=".15"/></g>
+    <g class="sway b" style="transform-origin:140px 148px"><path d="M140 148V122"/><circle cx="140" cy="110" r="14" fill="currentColor" fill-opacity=".15"/></g>
+    <path d="M235 135L262 108H335L308 135Z"/>
+    <path d="M253 135L280 108M271 135L298 108M289 135L316 108M244 122H321"/>
+    <path d="M272 135V148M298 135V148"/>
+    <g clip-path="url(#pnl)"><path class="sheen" d="M250 135L277 108" stroke-width="8" opacity="0"/></g>
     <path class="wave" d="M0 172C30 160 60 184 90 172S150 160 180 172S240 184 270 172S330 160 360 172"/>
     <path class="wave b" d="M0 188C30 176 60 200 90 188S150 176 180 188S240 200 270 188S330 176 360 188" opacity=".6"/>
   </svg>
